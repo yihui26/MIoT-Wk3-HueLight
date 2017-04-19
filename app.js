@@ -1,6 +1,6 @@
 var express = require('express');
 var http = require('http');
-var philipsHueID = '/api/tIqAjsywGJsHAzEBc5NUqaSxuAEjY79VK4dWFnx-/lights/';
+var philipsHueID = '/api/<<insert your generated username here>>/lights/';
 
 var server = express();
 server.use('/', express.static(__dirname + '/'));
@@ -8,7 +8,7 @@ server.get('/switch', function(req, res, next) {
 	var querystring = require('querystring');
     var data = '{"on":'+req.query.toggle+'}';
 	var options = {
-		host: '192.168.86.111',
+		host: '<<insert your gateway IP address here>>',
 		port: 80,
 		path: philipsHueID+req.query.id+'/state',
 		method: 'PUT',
