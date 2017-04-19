@@ -1,0 +1,12 @@
+{
+  "name": "philipshuenode",
+  "version": "0.0.1",
+  "description": "Experimenting node with Philips Hue",
+  "author": "Elaine Aw <my@email.com>",
+  "repository": "",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {},
+  "engine": "node >= 0.10.0"
+}

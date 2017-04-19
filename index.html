@@ -1,0 +1,42 @@
+<html>
+<header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</header>
+
+<body>
+
+    <p>Let's control the Hue Lights!</p>
+
+
+    </br>Right light:
+    <button type="button" onclick="lightSwitch(4,true)">On</button>
+    <button type="button" onclick="lightSwitch(4,false)">Off</button>
+    </br>
+    </br>Left light:
+    <button type="button" onclick="lightSwitch(5,true)">On</button>
+    <button type="button" onclick="lightSwitch(5,false)">Off</button>
+    </br>
+
+
+    <script>
+        function lightSwitch(id, switchToggle) {
+            $.ajax({
+                type: "GET",
+                url: "/switch",
+                data: {
+                    "id": id, 
+                    "toggle": switchToggle
+                },
+                success: function(res) {
+                    console.log("success");
+                },
+                contentType: "application/json",
+                dataType: 'json'
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>
