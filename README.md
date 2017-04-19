@@ -1,7 +1,7 @@
 # MIoT-Wk3-HueLight
 
 # 1. Update the code at app.js to contain your assigned username and gateway IP
-# Details at https://developers.meethue.com/documentation/getting-started
+Details at https://developers.meethue.com/documentation/getting-started
 
 # 2. Install server dependancies
 npm install
