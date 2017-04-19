@@ -2,7 +2,7 @@
   "name": "philipshuenode",
   "version": "0.0.1",
   "description": "Experimenting node with Philips Hue",
-  "author": "Elaine Aw <my@email.com>",
+  "author": "Elaine Aw <www.elaineaw.com>",
   "repository": "",
   "dependencies": {
     "express": "^4.15.2"
